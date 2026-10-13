@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SchoolFlow — Terminarz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>📅 SchoolFlow — Terminarz</h1>
+
+    <p>
+        <a href="index.html">📅 Terminarz</a> |
+        <a href="plan.html">📚 Plan lekcji</a> |
+        <a href="oceny.html">🧮 Kalkulator ocen</a> |
+        <a href="timer.html">⏱️ Timer nauki</a>
+    </p>
+
+    <hr>
+
+    <h2>Dodaj wydarzenie</h2>
+
+    <form id="eventForm">
+      <input type="text" id="eventTitle" placeholder="Nazwa wydarzenia" required>
+
+        <select id="eventType">
+            <option value="test">Sprawdzian</option>
+            <option value="quiz">Kartkówka</option>
+            <option value="homework">Zadanie domowe</option>
+            <option value="other">Inne</option>
+        </select>
+
+        <input type="date" id="eventDate" required>
+
+    <input type="text" id="eventSubject" placeholder="Przedmiot, np. matematyka" style="width: 280px; height: 38px; box-sizing: border-box;">
+
+        <button type="submit">➕ Dodaj do terminarza</button>
+    </form>
+
+    <hr>
+
+    <h2>📆 Nadchodzące wydarzenia</h2>
+    <div id="eventList"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

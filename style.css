@@ -1,0 +1,40 @@
+body {
+    background-color: white;
+    color: black;
+    font-family: Arial, sans-serif;
+    padding: 30px;
+}
+
+h1 {
+    color: black;
+}
+
+input, button {
+    padding: 8px;
+    font-size: 14px;
+}
+
+button {
+    background-color: #217346;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#taskList {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    max-width: 600px;
+    border: 1px solid #b7b7b7;
+}
+
+#taskList li {
+    padding: 12px;
+    border-bottom: 1px solid #b7b7b7;
+    background-color: white;
+}
+
+#taskList li:last-child {
+    border-bottom: none;
+}

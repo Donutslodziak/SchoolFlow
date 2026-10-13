@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SchoolFlow — Kalkulator ocen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>🧮 Kalkulator ocen</h1>
+<p>
+    <a href="index.html">← Wróć do terminarzu</a> 
+    <a href="timer.html">⏱️ Timer nauki</a>
+    <a href="plan.html">📚 Plan Lekcji</a>
+</p>
+    </p>
+
+    <h2>Dodaj ocenę</h2>
+
+    <input type="text" id="subjectInput" placeholder="Przedmiot, np. matematyka" style="width: 220px; box-sizing: border-box;">
+
+    <select id="gradeInput">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+    </select>
+
+    <button onclick="addGrade()">Dodaj ocenę</button>
+
+    <h2>Twoje oceny</h2>
+    <div id="gradeList"></div>
+
+    <script src="oceny.js"></script>
+</body>
+</html>

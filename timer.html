@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SchoolFlow — Timer nauki</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>⏱️ Timer nauki</h1>
+
+    <p>
+        <a href="index.html">← Wróć do terminarzu</a> |
+        <a href="plan.html">📚 Plan lekcji</a> |
+        <a href="oceny.html">🧮 Kalkulator ocen</a>
+    </p>
+
+    <div style="display: flex; gap: 40px; flex-wrap: wrap;">
+
+        <div>
+            <h2>📚 Czas nauki</h2>
+            <button onclick="setTimer(25)">25 minut</button>
+            <button onclick="setTimer(45)">45 minut</button>
+            <button onclick="setTimer(60)">60 minut</button>
+
+            <h1 id="timerDisplay">25:00</h1>
+
+            <button onclick="startTimer()">▶ Start</button>
+            <button onclick="pauseTimer()">⏸ Pauza</button>
+            <button onclick="resetTimer()">↻ Reset</button>
+        </div>
+
+        <div>
+            <h2>☕ Czas trwania przerwy</h2>
+            <button onclick="setBreakDuration(1.5)">1,5 min</button>
+            <button onclick="setBreakDuration(3)">3 min</button>
+            <button onclick="setBreakDuration(5)">5 min</button>
+
+            <h2>🔁 Co ile przerwa?</h2>
+            <button onclick="setBreakInterval(5)">5 min nauki</button>
+            <button onclick="setBreakInterval(10)">10 min nauki</button>
+            <button onclick="setBreakInterval(15)">15 min nauki</button>
+
+            <h2>⏳ Czas do przerwy</h2>
+            <h1 id="breakCountdown">05:00</h1>
+            <p id="breakStatus">Przerwa jeszcze się nie rozpoczęła.</p>
+        </div>
+
+    </div>
+
+    <p id="timerMessage">Wybierz czas i zacznij naukę! 💪</p>
+
+    <script src="timer.js"></script>
+</body>
+</html>
